@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.block {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--ifm-font-color-base);
+}
+
+.icon {
+    height: 230px;
+    margin-bottom: 30px;
+}
+.icon svg {
+    max-width: 100%;
+}

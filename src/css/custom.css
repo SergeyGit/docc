@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #023DFF;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-menu-color-background-active: #FF7800;
+  --ifm-menu-color-active: #373641;
+  --ifm-background-color: white;
+  --ifm-green: #68E348;
+  --ifm-blue-900: #000C33;
+
+  --ifm-h1-font-size: 6rem;
+  --ifm-h2-font-size: 4rem;
+  --ifm-h3-font-size: 2.5rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #313338;
+}
+html[data-theme='dark'] .menu__link--active {
+  color: white;
+}
+.navbar {
+  background-color: var(--ifm-background-color)
+}
+.navbar__brand {
+  flex-shrink: 0;
+}
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module {
+  border-right: none !important;
+}
+.menu__link, .menu__caret {
+  border-radius: 0;
+}
+.navbar .dropdown__menu {
+  min-width: 0;
+}
+.navbar-main-page {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+  height: auto;
+  box-shadow: none;
+}
+.navbar-main-page .navbar__inner {
+  background-color: #fff;
+  border: 1px solid #000c33;
+  box-shadow: 0 8px 0 #000c33;
+  padding-left: 16px;
+  padding-right: 0;
+  min-height: 64px;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar-main-page .search-bar{
+    display: none;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-font-color-base);
+}
+
+.footer--dark {
+  background-color: var(--ifm-blue-900);
+}
+.search-bar {
+  width: 100%;
+  max-width: 880px;
+  margin-left: 40px;
+}
+.DocSearch-Button {
+  width: 100%;
+}
+
+.main-color-svg {
+  fill: var(--ifm-menu-color-background-active);
+  /*fill: red;*/
+}
+.fill-opacity-svg {
+  fill-opacity: .7;
+}
+

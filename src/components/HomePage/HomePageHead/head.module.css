@@ -1,0 +1,41 @@
+.heroSection {
+  padding-top: 100px;
+  min-height: 530px;
+  color: white;
+  background: url(./bg-main-page.svg), var(--ifm-color-primary);
+  background-size: cover;
+}
+
+.heroTitle {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 104px;
+}
+
+@media (min-width: 992px) {
+  .heroSection {
+    padding-top: 190px;
+    min-height: 750px;
+  }
+}
+@media (min-width: 1500px) {
+  .heroSection {
+    min-height: 850px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1480px;
+}
+.text {
+  max-width: 740px;
+}
+
+.imageWrap {
+  max-width: 50%;
+}
+.image {
+  max-width: 100%;
+}

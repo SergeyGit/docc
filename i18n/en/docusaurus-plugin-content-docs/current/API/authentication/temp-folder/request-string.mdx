@@ -1,0 +1,152 @@
+---
+sidebar_position: 1
+id: request-signing
+title: Title
+description: Create a doc page with rich content.
+---
+
+<div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+
+<div>
+
+# Провайдери платіжних послуг
+
+Це рішення забезпечить вас усіма можливостями, що необхідні провайдерам платіжних послуг (PSP). Ви зможете надавати своїм мерчантам послуги з приймання платежів і при цьому не витрачати кошти розробку та підтримку власної платіжної інфраструктури.
+
+</div>
+
+
+<div style={{ width: "50%", flexShrink: 0, paddingLeft: "30px"}}>
+
+![An image from the static](/img/doc-img.svg)
+
+</div>
+
+</div>
+
+
+
+Requests to Tranzzo could be optionally signed, it is recommended. In this case, header `X-API-AUTH` should be replaced with appropriate signing algorithm.
+See examples below.
+
+<aside class="notice">
+    Signatures are case sensitive, they have to be lowercase <a href="https://en.wikipedia.org/wiki/Hexadecimal">Hex</a>.
+</aside>
+
+## HMAC-SHA1 (recommended)
+
+> OpenSSL HMAC-SHA1 signing example:
+
+```shell
+SECRET=changeme # replace with ${API_SECRET}
+DATA='{"name":"Joe","age":20}' # replace with raw request
+SIGNATURE=$(echo -n "$DATA" | openssl sha1 -hmac "$SECRET")
+echo "$SIGNATURE"
+# Expected signature
+48731878acbb41e6ee70eac5f1e6f8b8031f9484
+```
+
+Recommended way to sign requests is [HMAC-SHA1](https://en.wikipedia.org/wiki/HMAC) algorithm.
+See an example on the right.
+
+Authentication header: `X-API-AUTH: CPAY-HMAC ${API_KEY}:${SIGNATURE}`
+
+## Data types
+
+Type name             | Represented as |         Values                        |                Example
+--------------------- |----------------|-------------------------------------- | --------------------------------------
+`UUID`                | String(36)     |                                       | `"a8d80c86-0c7b-41bc-b63d-1e78f80edcd9"`
+`TIMESTAMP`           | String(23)     |                                       | `"2020-10-10T10:10:22.100"`
+`MODE`                | String(≤32)    | `direct`, `hosted`                    |
+`METHOD`                  | String(≤255)     | `purchase`, `capture`, `auth`, `void` |
+`URL`                        | String(≤2048)  |                                       | `https://examle.com/some/path?with=query`
+`IP`                        | String(7-45)     |                                       | `"8.8.8.8"` (IPv4), `"FE80::0202:B3FF:FE1E:8329"` (IPv6)
+`GW_ID`               | String(≤1024)  |                                       | `4212523:GssqUUQa`
+`BILLING_ID`          | String(≤1024)  |                                       | `123125124`
+`CURRENCY`                | String(3)             |                                       | `"UAH"`, `"USD"`, `"EUR"`
+`STATUS`                    | String(≤32)    |                                       | `"success"`
+`STATUS_CODE`            | String(4)      |                                       | `"1000"`  ([Tranzzo payment status code](#status-codes))
+`STATUS_DESCRIPTION`    | String(≤1024)  |                                       | `"Transaction is successful."` ([Tranzzo payment status code](#status-codes) description)
+`ECI`                        | String(≤2)     |                                       | `"7"`
+`MCC`                        | String(≤5)     |                                       | `"3455"`
+`CC_NUMBER`           | String(13-20)  |                                       | `"4242424242424242"`
+`CC_MASK`             | String(13-20)  |                                       | `"424242******4242"`
+
+:::note
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::caution
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+
+## Tabs
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="value" label="Values" default>
+
+Type name             | Represented as |         Values                        |                Example
+--------------------- |----------------|-------------------------------------- | --------------------------------------
+`MODE`                | String(≤32)    | `direct`, `hosted`                    |
+`METHOD`                  | String(≤255)     | `purchase`, `capture`, `auth`, `void` |
+
+</TabItem>
+<TabItem value="string" label="String">
+
+Type name             | Represented as |         Values                        |                Example
+--------------------- |----------------|-------------------------------------- | --------------------------------------
+`UUID`                | String(36)     |                                       | `"a8d80c86-0c7b-41bc-b63d-1e78f80edcd9"`
+`TIMESTAMP`           | String(23)     |                                       | `"2020-10-10T10:10:22.100"`
+`MODE`                | String(≤32)    | `direct`, `hosted`                    |
+`CC_NUMBER`           | String(13-20)  |                                       | `"4242424242424242"`
+`CC_MASK`             | String(13-20)  |                                       | `"424242******4242"`
+
+</TabItem>
+<TabItem value="cc_mask" label="CC_MASK">
+
+Type name             | Represented as |         Values                        |                Example
+--------------------- |----------------|-------------------------------------- | --------------------------------------
+`CC_MASK`             | String(13-20)  |                                       | `"424242******4242"`
+
+</TabItem>
+</Tabs>
+
+## React Table With Filter
+
+import MainTable from '@site/src/components/Table/MainTable.js';
+import {data, columns} from './_mock';
+
+<MainTable columns={columns} data={data} />
+
+## WL block
+
+import CategoriesIconBlock from '@site/src/components/CategoriesIconBlock/CategoriesIconBlock';
+
+<CategoriesIconBlock/>
+
