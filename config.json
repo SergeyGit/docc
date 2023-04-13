@@ -1,7 +1,8 @@
 {
   "index_name": "docusaurus tranzzo",
   "start_urls": [
-    "https://subtle-bunny-8697af.netlify.app/"
+    "https://subtle-bunny-8697af.netlify.app/",
+    "https://subtle-bunny-8697af.netlify.app/docs"
   ],
   "sitemap_urls": [
     "http://f0805998.xsph.ru/sitemap.xml"
