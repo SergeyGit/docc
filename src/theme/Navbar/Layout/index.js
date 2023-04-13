@@ -24,8 +24,8 @@ export default function NavbarLayout({children}) {
   } = useThemeConfig();
   const mobileSidebar = useNavbarMobileSidebar();
   const {siteConfig} = useDocusaurusContext();
+  const isHomepage = typeof location !== 'undefined' && location.pathname === siteConfig.baseUrl;
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
-  // const isHomepage = location.pathname === siteConfig.baseUrl;
   return (
     <nav
       ref={navbarRef}
@@ -45,8 +45,7 @@ export default function NavbarLayout({children}) {
           'navbar--dark': style === 'dark',
           'navbar--primary': style === 'primary',
           'navbar-sidebar--show': mobileSidebar.shown,
-            // 'navbar-main-page': isHomepage
-            'navbar-main-page': true
+            'navbar-main-page': isHomepage
         },
       )}>
       {children}
