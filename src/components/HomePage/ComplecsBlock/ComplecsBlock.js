@@ -12,32 +12,50 @@ import { LinkSecondary } from '../../Links/Links';
 const complecsSolutions = [
   {
     icon: Icon1,
-    caption: 'Провайдери платіжних послуг ',
+    caption: translate({
+      id: 'homepage.home_complex_providers',
+      message: 'Провайдери платіжних послуг ',
+    }),
     link: '/docs',
   },
   {
     icon: Icon2,
-    caption: 'Мікрофінансові установи',
+    caption: translate({
+      id: 'homepage.home_complex_microfinance',
+      message: 'Мікрофінансові установи',
+    }),
     link: '/docs',
   },
   {
     icon: Icon3,
-    caption: 'Електронна комерція',
+    caption: translate({
+      id: 'homepage.home_complex_commercial',
+      message: 'Електронна комерція',
+    }),
     link: '/docs',
   },
   {
     icon: Icon4,
-    caption: 'Маркетплейси',
+    caption: translate({
+      id: 'homepage.home_complex_marketplaces',
+      message: 'Маркетплейси',
+    }),
     link: '/docs',
   },
   {
     icon: Icon5,
-    caption: 'Сервіси за підпискою',
+    caption: translate({
+      id: 'homepage.home_complex_services',
+      message: 'Сервіси за підпискою',
+    }),
     link: '/docs',
   },
   {
     icon: Icon6,
-    caption: 'iGaming',
+    caption: translate({
+      id: 'homepage.home_complex_gaming',
+      message: 'iGaming',
+    }),
     link: '/docs',
   },
 ];
@@ -52,18 +70,11 @@ export const ComplecsBlock = () => {
           </Translate>
         </div>
         <div className={styles.repeatable}>
-          {complecsSolutions.map(({ link, caption, icon }, index) => (
+          {complecsSolutions.map(({ link, caption, icon }) => (
             <div className={styles.repeatableItemWrap} key={caption}>
               <div className={styles.repeatableItem}>
                 <img src={icon} alt={caption} />
-                <div className={styles.repeatableItemText}>
-                  <Translate
-                    id={`homepage.home_complex_${index}`}
-                    description={`caption on repeatable complex block ${index}`}
-                  >
-                    {caption}
-                  </Translate>
-                </div>
+                <div className={styles.repeatableItemText}>{caption}</div>
                 <LinkSecondary
                   path={link}
                   title={translate({

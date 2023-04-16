@@ -412,5 +412,51 @@
   "Детальніше": {
     "message": "Детальніше",
     "description": "The homepage link"
+  },
+  "homepage.home_complecs_caption": {
+    "message": "Комплексні рішення для різних сфер бізнесу",
+    "description": "caption on complecs block"
+  },
+  "Дізнатися більше": {
+    "message": "Дізнатися більше",
+    "description": "Дізнатися більше"
+  },
+  "homepage.home_info_caption": {
+    "message": "В кожному кейсі вас чекає така інформація:",
+    "description": "caption on info block"
+  },
+  "homepage.home_info_repeat1": {
+    "message": "Набір рішень та опис можливостей",
+    "description": "caption on repeatable info block 1"
+  },
+  "homepage.home_info_repeat2": {
+    "message": "Опис процесу взаємодії для вашого клієнта",
+    "description": "caption on repeatable info block 2"
+  },
+  "homepage.home_info_repeat3": {
+    "message": "Cхема взаємодії з Tranzzo",
+    "description": "caption on repeatable info block 3"
+  },
+  "homepage.home_text": {
+    "message": "Tranzzo має різноманітний набір платіжних продуктів. Щоби вам було простіше обрати серед них потрібні рішення та швидше підключитися, ми зібрали їх у готові бізнес-кейси.",
+    "description": "text on homepage"
+  },
+  "homepage.home_complex_providers": {
+    "message": "Провайдери платіжних послуг "
+  },
+  "homepage.home_complex_microfinance": {
+    "message": "Мікрофінансові установи"
+  },
+  "homepage.home_complex_commercial": {
+    "message": "Електронна комерція"
+  },
+  "homepage.home_complex_marketplaces": {
+    "message": "Маркетплейси"
+  },
+  "homepage.home_complex_services": {
+    "message": "Сервіси за підпискою"
+  },
+  "homepage.home_complex_gaming": {
+    "message": "iGaming"
   }
 }
