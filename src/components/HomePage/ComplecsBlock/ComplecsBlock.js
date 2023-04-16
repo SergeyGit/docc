@@ -16,7 +16,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_providers',
       message: 'Провайдери платіжних послуг ',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
   {
     icon: Icon2,
@@ -24,7 +24,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_microfinance',
       message: 'Мікрофінансові установи',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
   {
     icon: Icon3,
@@ -32,7 +32,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_commercial',
       message: 'Електронна комерція',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
   {
     icon: Icon4,
@@ -40,7 +40,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_marketplaces',
       message: 'Маркетплейси',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
   {
     icon: Icon5,
@@ -48,7 +48,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_services',
       message: 'Сервіси за підпискою',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
   {
     icon: Icon6,
@@ -56,7 +56,7 @@ const complecsSolutions = [
       id: 'homepage.home_complex_gaming',
       message: 'iGaming',
     }),
-    link: '/docs',
+    link: '/docs/intro',
   },
 ];
 
