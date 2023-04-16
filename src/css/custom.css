@@ -19,7 +19,10 @@
   --ifm-menu-color-active: #373641;
   --ifm-background-color: white;
   --ifm-green: #68E348;
+  --ifm-orange: #FF7800;
   --ifm-blue-900: #000C33;
+  --ifm-blue-500: #023DFF;
+  --ifm-blue-50: #EBEFFF;
 
   --ifm-h1-font-size: 6rem;
   --ifm-h2-font-size: 4rem;
@@ -38,6 +41,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-blue-50: #212226;
 }
 
 html[data-theme='dark'] {
@@ -73,9 +77,9 @@ html[data-theme='dark'] .menu__link--active {
 }
 .navbar-main-page .navbar__inner {
   background-color: #fff;
-  border: 1px solid #000c33;
-  box-shadow: 0 8px 0 #000c33;
-  padding-left: 16px;
+  border: 1px solid var(--ifm-blue-900);
+  box-shadow: 0 8px 0 var(--ifm-blue-900);
+  padding-left: 40px;
   padding-right: 0;
   min-height: 64px;
   max-width: 1480px;

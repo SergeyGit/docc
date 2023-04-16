@@ -1,0 +1,44 @@
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.repeatable {
+  margin-top: 64px;
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repeatableItemWrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 33%;
+}
+.repeatableItem {
+  border-top: 1px solid var(--ifm-blue-900);
+  border-bottom: 1px solid var(--ifm-blue-900);
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.repeatableItemText {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-top: 32px;
+  font-weight: 500;
+  height: 80px;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 1rem;
+  margin-top: 24px;
+}
+
+.caption {
+  font-size: 64px;
+  font-weight: 500;
+}

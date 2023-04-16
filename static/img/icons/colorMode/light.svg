@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_31_3222)">
+<path d="M23 12H20" class="strokeSvgModeGreen" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 12H1" class="strokeSvgModeGreen" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 23V20" class="strokeSvgModeGreen" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 4V1" class="strokeSvgModeGreen" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.0702 20.0702L17.9502 17.9502" class="strokeSvgModeYellow" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.05018 6.05018L3.93018 3.93018" class="strokeSvgModeYellow" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.05018 17.9502L3.93018 20.0702" class="strokeSvgModeYellow" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.0702 3.93018L17.9502 6.05018" class="strokeSvgModeYellow" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" class="strokeSvgModeYellow fillSvgMode" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_31_3222">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

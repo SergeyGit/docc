@@ -1,0 +1,72 @@
+.toggle {
+  width: 145px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+:global(.navbar-main-page) .toggle {
+  border-left: 1px solid var(--ifm-blue-900);
+  background-color: var(--ifm-blue-500);
+}
+.icon {
+  position: relative;
+  z-index: 2;
+}
+.icon :global(.strokeSvgModeYellow), .icon :global(.strokeSvgModeGreen){
+  stroke: white;
+}
+.icon :global(.fillSvgMode){
+  fill: white;
+}
+
+.colorSvg :global(.fillSvgMode) {
+  fill: var(--ifm-green);
+}
+
+.colorSvg :global(.strokeSvgModeGreen) {
+  stroke: var(--ifm-green);
+}
+
+.colorSvg :global(.strokeSvgModeYellow) {
+  stroke: var(--ifm-orange);
+}
+.docPageWrap {
+  position: relative;
+  display: inline-block;
+}
+.active:after  {
+  content: '';
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  left: -8px;
+  top: -1px;
+  background-image: url(@site/static/img/icons/colorMode/bg-hover-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.active .icon path {
+  stroke: white;
+}
+
+.toggleButton {
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /*transition: background var(--ifm-transition-fast);*/
+}
+
+.toggleButton:hover {
+  /*background: var(--ifm-color-emphasis-200);*/
+}
+
+.toggleButtonDisabled {
+  cursor: not-allowed;
+}

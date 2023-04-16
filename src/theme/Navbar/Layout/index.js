@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import {useThemeConfig} from '@docusaurus/theme-common';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 import {
   useHideableNavbar,
   useNavbarMobileSidebar,
@@ -24,7 +25,8 @@ export default function NavbarLayout({children}) {
   } = useThemeConfig();
   const mobileSidebar = useNavbarMobileSidebar();
   const {siteConfig} = useDocusaurusContext();
-  const isHomepage = typeof location !== 'undefined' && location.pathname === siteConfig.baseUrl;
+    const isBrowser = useIsBrowser();
+  const isHomepage = isBrowser && location.pathname === siteConfig.baseUrl;
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
   return (
     <nav

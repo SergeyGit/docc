@@ -4,6 +4,7 @@ import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
 import {useLocation} from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import {LangIcons} from "@site/src/constants/locales.js";
+import styles from './styles.module.css';
 
 
 export default function LocaleDropdownNavbarItem({
@@ -50,11 +51,13 @@ export default function LocaleDropdownNavbarItem({
   const DropdownLabel = LangIcons[currentLocale];
 
   return (
+      <div className={styles.locale}>
         <DropdownNavbarItem
             {...props}
             mobile={mobile}
             label={<DropdownLabel />}
             items={items}
         />
+      </div>
   );
 }
