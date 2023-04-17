@@ -58,13 +58,15 @@ const config = {
           breadcrumbs: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -88,7 +90,7 @@ const config = {
           {
             type: 'search',
             position: 'left',
-            className: 'search-bar'
+            className: 'search-bar',
           },
           {
             type: 'localeDropdown',
@@ -129,46 +131,79 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tranzzo',
             items: [
               {
-                label: 'Doc',
+                label: 'Про нас',
+                to: '/docs/intro',
+              },
+              {
+                label: "Кар'єра",
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Спільнота',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/tranzzo',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/tranzzo/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/tranzzo/',
+              },
+              {
+                label: 'Блог',
+                href: 'https://tranzzo.com/blog',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Контакти',
             items: [
               {
-                label: 'Blog',
+                label: 'Центр підтримки',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Відділ продажів',
+                to: '/blog',
+              },
+              {
+                label: 'Прес-центр',
+                to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Юридичні аспекти',
+            items: [
+              {
+                label: 'Правила та умови',
+                to: '/blog',
+              },
+              {
+                label: 'Політика приватності',
+                to: '/blog',
+              },
+              {
+                label: 'Політика збору даних',
+                to: '/blog',
+              },
+              {
+                label: 'Політика запобігання відмиванню коштів',
+                to: '/blog',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: ' ',
       },
       prism: {
         theme: lightCodeTheme,

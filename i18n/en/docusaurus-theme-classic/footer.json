@@ -38,5 +38,73 @@
   "copyright": {
     "message": "Copyright © 2023 My Project, Inc. Built with Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.title.Tranzzo": {
+    "message": "Tranzzo",
+    "description": "The title of the footer links column with title=Tranzzo in the footer"
+  },
+  "link.title.Спільнота": {
+    "message": "Спільнота",
+    "description": "The title of the footer links column with title=Спільнота in the footer"
+  },
+  "link.title.Контакти": {
+    "message": "Контакти",
+    "description": "The title of the footer links column with title=Контакти in the footer"
+  },
+  "link.title.Юридичні аспекти": {
+    "message": "Юридичні аспекти",
+    "description": "The title of the footer links column with title=Юридичні аспекти in the footer"
+  },
+  "link.item.label.Про нас": {
+    "message": "Про нас",
+    "description": "The label of footer link with label=Про нас linking to /docs/intro"
+  },
+  "link.item.label.Кар'єра": {
+    "message": "Кар'єра",
+    "description": "The label of footer link with label=Кар'єра linking to /docs/intro"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/tranzzo"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/tranzzo/"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/tranzzo/"
+  },
+  "link.item.label.Блог": {
+    "message": "Блог",
+    "description": "The label of footer link with label=Блог linking to https://tranzzo.com/blog"
+  },
+  "link.item.label.Центр підтримки": {
+    "message": "Центр підтримки",
+    "description": "The label of footer link with label=Центр підтримки linking to /blog"
+  },
+  "link.item.label.Відділ продажів": {
+    "message": "Відділ продажів",
+    "description": "The label of footer link with label=Відділ продажів linking to /blog"
+  },
+  "link.item.label.Прес-центр": {
+    "message": "Прес-центр",
+    "description": "The label of footer link with label=Прес-центр linking to /blog"
+  },
+  "link.item.label.Правила та умови": {
+    "message": "Правила та умови",
+    "description": "The label of footer link with label=Правила та умови linking to /blog"
+  },
+  "link.item.label.Політика приватності": {
+    "message": "Політика приватності",
+    "description": "The label of footer link with label=Політика приватності linking to /blog"
+  },
+  "link.item.label.Політика збору даних": {
+    "message": "Політика збору даних",
+    "description": "The label of footer link with label=Політика збору даних linking to /blog"
+  },
+  "link.item.label.Політика запобігання відмиванню коштів": {
+    "message": "Політика запобігання відмиванню коштів",
+    "description": "The label of footer link with label=Політика запобігання відмиванню коштів linking to /blog"
   }
 }
