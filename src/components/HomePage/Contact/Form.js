@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './contact.module.css';
 import { ButtonPrimary } from '../../Links/Links';
 import SuccessImg from './checkmark.svg';
-import { sendEmail } from './mailer';
+// import { sendEmail } from './mailer';
 
 const initData = {
   nameForm: '',
@@ -27,18 +27,24 @@ const Form = () => {
     e.preventDefault();
     // if (!statusError && phone.length > 4) {
     setLoading(true);
-    sendEmail(formData)
-      .then((res) => {
-        setLoading(false);
-        if (res.status === 200) {
-          setFormData(initData);
-          setSuccess(true);
-        }
-      })
-      .catch((error) => {
-        setLoading(false);
-        console.log(error);
-      });
+
+    setTimeout(() => {
+      setLoading(false);
+      setFormData(initData);
+      setSuccess(true);
+    }, 1000);
+    // sendEmail(formData)
+    //   .then((res) => {
+    //     setLoading(false);
+    //     if (res.status === 200) {
+    //       setFormData(initData);
+    //       setSuccess(true);
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     setLoading(false);
+    //     console.log(error);
+    //   });
   };
 
   return (
