@@ -20,3 +20,11 @@ export const LinkSecondary = ({ path, title, light = false, classes, linkProps }
     </Link>
   );
 };
+
+export const ButtonPrimary = ({ title, classes, ...rest }) => {
+  return (
+    <button className={cn(styles.primaryButton, classes)} {...rest}>
+      <div className={styles.contentButton}>{title}</div>
+    </button>
+  );
+};

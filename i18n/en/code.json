@@ -402,11 +402,11 @@
     "description": "The title of the tag list page"
   },
   "homepage.zagolovok": {
-    "message": "Те, що потрібно вашому бізнесу ",
+    "message": "Готові рішення для різних сфер бізнесу",
     "description": "zagolovok desc"
   },
   "homepage.podzagolovok": {
-    "message": "В залежності від типу вашого бізнесу ми пропонуємо набір сервісів та можливостей, покликаних задовольнити його потреби",
+    "message": "Оберіть потрібну сферу бізнесу та дізнайтеся про можливості для вас та ваших клієнтів",
     "description": "podzagolovok desc"
   },
   "Детальніше": {

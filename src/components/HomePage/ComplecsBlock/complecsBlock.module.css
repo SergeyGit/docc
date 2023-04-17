@@ -4,7 +4,6 @@
 }
 
 .repeatable {
-  margin-top: 64px;
   margin-left: -20px;
   margin-right: -20px;
   display: flex;
@@ -15,6 +14,7 @@
   padding-left: var(--ifm-global-spacing);
   padding-right: var(--ifm-global-spacing);
   width: 33%;
+  margin-top: 40px;
 }
 .repeatableItem {
   border-top: 1px solid var(--ifm-blue-900);
@@ -22,14 +22,16 @@
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .repeatableItemText {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.25;
-  margin-top: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-weight: 500;
-  height: 80px;
   overflow: hidden;
 }
 
@@ -39,6 +41,6 @@
 }
 
 .caption {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 500;
 }

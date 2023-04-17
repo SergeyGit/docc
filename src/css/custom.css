@@ -22,6 +22,7 @@
   --ifm-orange: #FF7800;
   --ifm-blue-900: #000C33;
   --ifm-blue-500: #023DFF;
+  --ifm-blue-300: #678BFF;
   --ifm-blue-50: #EBEFFF;
 
   --ifm-h1-font-size: 6rem;
@@ -32,6 +33,7 @@
   --ifm-h6-font-size: 0.85rem;
 
   --ifm-global-spacing: 20px;
+  --ifm-container-width-xl: 1480px;
 }
 
 [data-theme='dark'] {
@@ -126,4 +128,7 @@ html[data-theme='dark'] .menu__link--active {
 .footer__link-item {
   font-size: 14px;
   line-height: 30px;
+}
+.footer__copyright {
+  max-width: 848px;
 }

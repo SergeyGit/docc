@@ -5,6 +5,7 @@ import { HomepageHead } from '../components/HomePage/HomePageHead/HomePageHead';
 import { TextBlock } from '../components/HomePage/TextBlock/TextBlock';
 import { InfoBlock } from '../components/HomePage/InfoBlock/InfoBlock';
 import { ComplecsBlock } from '../components/HomePage/ComplecsBlock/ComplecsBlock';
+import { Contact } from '../components/HomePage/Contact/Contact';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,6 +18,7 @@ export default function Home() {
       <TextBlock />
       <InfoBlock />
       <ComplecsBlock />
+      <Contact />
     </Layout>
   );
 }

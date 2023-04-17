@@ -1,0 +1,80 @@
+.section {
+    padding-top: 54px;
+    padding-bottom: 114px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    max-width: var(--ifm-container-width-xl);
+    padding: 0 var(--ifm-spacing-horizontal);
+    width: 100%;
+}
+
+.contactText {
+    color: red;
+}
+.content {
+
+}
+.contentCaption {
+    font-size: 48px;
+    font-weight: 500;
+}
+.text {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 520px;
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+.success {
+    text-align: center;
+    font-size: 0;
+    margin-top: 60px;
+    margin-bottom: 36px;
+}
+.successCaption {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 64px;
+}
+.successText {
+    font-size: 20px;
+    margin-bottom: 64px;
+}
+.successButton {
+    width: auto;
+}
+
+.formWrap {
+    background-color: var(--ifm-blue-50);
+    border: 2px solid var(--ifm-blue-900);
+    width: 100%;
+    max-width: 656px;
+    padding: 32px 56px 56px;
+    margin-left: auto;
+    box-shadow: 8px 8px 0 #000C33;
+}
+
+.formItem {
+    margin-top: 24px;
+}
+
+.formWrap input, .formWrap textarea {
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid var(--ifm-blue-300);
+    line-height: 62px;
+    font-size: 16px;
+    padding: 0 16px;
+    margin-top: 4px;
+    resize: none;
+}
+
+.button {
+    margin-top: 40px;
+}
