@@ -129,6 +129,13 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'Tranzzo',
+          src: 'img/logo-footer.svg',
+          href: '/',
+          width: 234,
+          height: 32,
+        },
         links: [
           {
             title: 'Tranzzo',
@@ -203,7 +210,8 @@ const config = {
             ],
           },
         ],
-        copyright: ' ',
+        copyright:
+          'Международная платформа для онлайн-платежей. Мы разрабатываем решения и технологии, чтобы пользователи могли расплачиваться на сайтах, в приложениях и мессенджерах любым удобным способом.',
       },
       prism: {
         theme: lightCodeTheme,

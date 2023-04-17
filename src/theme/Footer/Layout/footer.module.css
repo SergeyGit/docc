@@ -1,0 +1,14 @@
+.footer {
+    border-bottom: 1px solid #3A3E74;
+    padding: 0 0 64px;
+}
+.head {
+    border-bottom: 1px solid #3A3E74;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-bottom: 64px;
+}
+.logo {
+    padding-left: var(--ifm-global-spacing);
+    padding-right: var(--ifm-global-spacing);
+}
