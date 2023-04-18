@@ -16,7 +16,6 @@ const Form = () => {
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setFormData({
       ...formData,
       [e.target.id]: e.target.value,

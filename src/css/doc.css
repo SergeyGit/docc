@@ -1,0 +1,132 @@
+table {
+    font-size: 14px;
+}
+
+table thead tr {
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+table thead {
+    background-color: inherit;
+}
+
+table tr {
+    background-color: var(--ifm-table-background);
+    border-top: none;
+    border-bottom: 1px solid var(--ifm-table-border-tr);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--ifm-table-background);
+}
+
+table th,
+table td {
+    padding: 16px 8px;
+    border: none;
+}
+
+table th {
+    background-color: inherit;
+    text-align: left;
+    /*white-space: nowrap;*/
+}
+
+table td {
+    color: var(--ifm-table-cell-color);
+}
+
+code {
+    border: none;
+    background-color: #F2F6FF;
+    border-radius: 6px;
+    padding: 4px 10px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+[data-theme='dark'] code {
+    background-color: rgba(51, 102, 255, 0.16);
+}
+
+.menu {
+    font-size: 14px;
+}
+
+.markdown > h2 {
+    --ifm-h2-font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+.markdown > h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.markdown ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.markdown li {
+    /*display: flex;*/
+    padding-left: 24px;
+    padding-right: 5px;
+    position: relative;
+}
+.markdown li {
+    margin-top: 0;
+    margin-bottom: var(--ifm-list-item-margin);
+}
+.markdown li + li {
+    margin-top: 0;
+}
+
+.markdown li a {
+}
+
+.markdown li::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--ifm-green);
+    border: 5px solid var(--ifm-blue-500);
+}
+
+.markdown ol {
+    counter-reset: index;
+}
+.markdown ol li::before {
+    counter-increment: index;
+    content: counters(index, '.');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--ifm-green);
+    border: 8px solid var(--ifm-blue-500);
+    flex-shrink: 0;
+    margin-right: 7px;
+    font-weight: bold;
+    color: var(--ifm-blue-600);
+    text-align: center;
+    line-height: 24px;
+    top: 0;
+}
+.markdown ol li {
+    padding-left: 48px;
+    min-height: 40px;
+}
+
+.markdown .half-item ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.markdown .half-item li{
+    width: 50%;
+}
+

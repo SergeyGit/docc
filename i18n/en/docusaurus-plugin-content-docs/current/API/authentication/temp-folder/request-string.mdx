@@ -3,6 +3,7 @@ sidebar_position: 1
 id: request-signing
 title: Title
 description: Create a doc page with rich content.
+hide_title: true
 ---
 
 <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -92,10 +93,44 @@ var applePaySession = new ApplePaySession(3, paymentRequest);
 }
 ```
 
+## P2P payments
+
+HTTP method: `POST`
+
 Recommended way to sign requests is [HMAC-SHA1](https://en.wikipedia.org/wiki/HMAC) algorithm.
 See an example on the right.
 
 Authentication header: `X-API-AUTH: CPAY-HMAC ${API_KEY}:${SIGNATURE}`
+
+## Можливості та сервіси
+<div className="half-item">
+
+- Платіжні посилання та QR-коди
+- Мультивалютність
+- Валютна конвертація
+- 3D Secure 2.1
+- Токенізація карткових даних
+- Ідентифікація платників
+- Робота з диспутами (оспорювані платежі)
+- Управління балансом
+- Мерчант-портал
+- Брендовані чекаути
+- Технічна документація
+
+</div>
+
+## Як це працює для ваших клієнтів
+
+При використанні PSP-моделі ваші користувачі (мерчанти) працюватимуть за такою схемою:
+
+1. Мерчант реєструється у мерчант-порталі.
+2. Проходить онбординг за передбаченою вами процедурою.
+3. Генерує платежі в автоматичному режимі через запити до API або створює **[платіжні посилання](http://example.com/)** вручну та передає їх далі своїм покупцям.
+
+### Схема взаємодії сервісів
+
+![Схема взаємодії сервісів](./image.svg)
+
 
 ## Data types
 
