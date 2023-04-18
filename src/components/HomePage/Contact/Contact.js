@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.content}>
+        <div>
           <div className={styles.contentCaption}>
             <Translate id="homepage.contact_caption" description="contact caption">
               Не знайшли свою сферу?

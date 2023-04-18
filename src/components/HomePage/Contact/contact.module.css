@@ -15,9 +15,6 @@
 .contactText {
     color: red;
 }
-.content {
-
-}
 .contentCaption {
     font-size: 48px;
     font-weight: 500;
@@ -60,6 +57,9 @@
     margin-left: auto;
     box-shadow: 8px 8px 0 #000C33;
 }
+:global([data-theme='dark']) .formWrap {
+    background-color: var(--ifm-blue-500);
+}
 
 .formItem {
     margin-top: 24px;
@@ -75,6 +75,10 @@
     padding: 0 16px;
     margin-top: 4px;
     resize: none;
+}
+:global([data-theme='dark']) .formWrap input, .formWrap textarea {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--ifm-blue-300);
 }
 
 .button {
