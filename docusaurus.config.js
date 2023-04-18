@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// const lightCodeTheme = require('prism-react-renderer/themes/github');
+// const darkCodeTheme = require('./static/prism/codeColors.js');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -213,8 +213,115 @@ const config = {
           'Международная платформа для онлайн-платежей. Мы разрабатываем решения и технологии, чтобы пользователи могли расплачиваться на сайтах, в приложениях и мессенджерах любым удобным способом.',
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        // theme: darkCodeTheme,
+        theme: {
+          plain: {
+            color: '#F8F8F2',
+            backgroundColor: '#313748',
+          },
+          styles: [
+            {
+              types: ['prolog', 'constant', 'builtin'],
+              style: {
+                color: 'rgb(189, 147, 249)',
+              },
+            },
+            // {
+            //   types: ['inserted', 'function'],
+            //   style: {
+            //     color: 'rgba(83, 182, 58, 1)',
+            //   },
+            // },
+            {
+              types: ['inserted', 'function'],
+              style: {
+                color: 'rgba(243, 243, 248, 1)',
+              },
+            },
+            {
+              types: ['deleted'],
+              style: {
+                color: 'rgb(255, 85, 85)',
+              },
+            },
+            {
+              types: ['changed'],
+              style: {
+                color: 'rgb(255, 184, 108)',
+              },
+            },
+            {
+              types: ['punctuation', 'symbol'],
+              style: {
+                color: 'rgb(248, 248, 242)',
+              },
+            },
+            {
+              types: ['literal-property', 'property'],
+              style: {
+                color: 'rgba(83, 182, 58, 1)',
+              },
+            },
+            {
+              types: ['char', 'tag', 'selector'],
+              style: {
+                color: 'rgb(255, 121, 198)',
+              },
+            },
+            {
+              types: ['string'],
+              style: {
+                color: 'rgb(255, 147, 51)',
+              },
+            },
+            {
+              types: ['number'],
+              style: {
+                color: 'rgba(151, 151, 247, 1)',
+              },
+            },
+            {
+              types: ['operator', 'arrow'],
+              style: {
+                color: 'rgba(255, 61, 113, 1)',
+              },
+            },
+            {
+              types: ['keyword', 'variable'],
+              style: {
+                color: 'rgba(103, 139, 255, 1)',
+                fontStyle: 'italic',
+              },
+            },
+            {
+              types: ['control-flow'],
+              style: {
+                color: 'rgba(255, 61, 113, 1)',
+                fontStyle: 'italic',
+              },
+            },
+            {
+              types: ['dom', 'variable'],
+              style: {
+                color: 'rgb(255, 112, 141)',
+                fontStyle: 'italic',
+              },
+            },
+            {
+              types: ['comment'],
+              style: {
+                color: 'rgb(98, 114, 164)',
+              },
+            },
+            {
+              types: ['attr-name'],
+              style: {
+                color: 'rgb(241, 250, 140)',
+              },
+            },
+          ],
+        },
+        // darkTheme: darkCodeTheme,
       },
     }),
 };

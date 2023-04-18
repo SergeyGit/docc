@@ -46,6 +46,52 @@ echo "$SIGNATURE"
 48731878acbb41e6ee70eac5f1e6f8b8031f9484
 ```
 
+```js
+if (window.ApplePaySession) {
+  console.log("The Apple Pay JS API is available.");
+
+  const canMakePayments = ApplePaySession.canMakePayments();
+  console.log("canMakePayments: " + JSON.stringify(canMakePayments));
+
+  const merchantIdentifier = {MERCHANT_IDENTIFIER};
+  ApplePaySession
+    .canMakePaymentsWithActiveCard(merchantIdentifier);
+    .then(canMakePayments => {
+      console.log("canMakePayments: " + canMakePayments);
+      if (canMakePayments) {...}
+    }
+}
+```
+
+```js
+document.getElementById("apple-pay-button").onclick = event => {
+  var paymentRequest = {
+    currencyCode: 'UAH',
+    countryCode: 'UA',
+    total: {
+      label: {PRODUCT_NAME},
+      amount: {PAYMENT_AMOUNT}
+    },
+    merchantCapabilities: ['supports3DS'],
+    supportedNetworks: ['masterCard', 'visa']
+  }
+
+var applePaySession = new ApplePaySession(3, paymentRequest);
+```
+
+```json
+{
+  "version":              "EC_v1",
+  "data":                 "zTMZDPumdE7h8oY/+31VMZd60dMaxB...",
+  "signature":            "MIAGCSqGSIb3DQEHA...",
+  "header": {
+    "ephemeralPublicKey": "MFkwEwYHKoZIzj0C...",
+    "publicKeyHash":      "3AKqH/wPWdQIBpGIv1PC4uDTbGouPgWbmUlFGiHopig=",
+    "transactionId":      "d6e63976191fdf051f7cb95e0e5da70a19c99a5576ececbfc0fd65ad2a7f2f74"
+  }
+}
+```
+
 Recommended way to sign requests is [HMAC-SHA1](https://en.wikipedia.org/wiki/HMAC) algorithm.
 See an example on the right.
 
