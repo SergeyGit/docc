@@ -84,7 +84,7 @@ const Form = () => {
           </div>
           <div className={styles.formItem}>
             <label htmlFor="text">Повідомлення</label>
-            <textarea id="text" value={formData.text} onChange={handleChange} required />
+            <textarea id="text" value={formData.text} rows={5} onChange={handleChange} required />
           </div>
 
           <ButtonPrimary
