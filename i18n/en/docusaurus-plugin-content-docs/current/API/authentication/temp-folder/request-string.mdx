@@ -33,6 +33,21 @@ import {businessBenefits} from './_mock';
 
 <MultiColorCaptionsBlock props={businessBenefits} />
 
+## Більше деталей про ...
+
+import CardsCategoriesBlock from '@site/src/components/CardsCategoriesBlock/CardsCategoriesBlock.js';
+import {categoriesBlock} from './_mock';
+
+<CardsCategoriesBlock props={categoriesBlock} />
+
+## P2P payments
+
+HTTP method: `POST`
+
+Recommended way to sign requests is [HMAC-SHA1](https://en.wikipedia.org/wiki/HMAC) algorithm.
+See an example on the right.
+
+Authentication header: `X-API-AUTH: CPAY-HMAC ${API_KEY}:${SIGNATURE}`
 
 ```js
 if (window.ApplePaySession) {
@@ -79,15 +94,6 @@ var applePaySession = new ApplePaySession(3, paymentRequest);
   }
 }
 ```
-
-## P2P payments
-
-HTTP method: `POST`
-
-Recommended way to sign requests is [HMAC-SHA1](https://en.wikipedia.org/wiki/HMAC) algorithm.
-See an example on the right.
-
-Authentication header: `X-API-AUTH: CPAY-HMAC ${API_KEY}:${SIGNATURE}`
 
 ## Можливості та сервіси
 <div className="half-item">

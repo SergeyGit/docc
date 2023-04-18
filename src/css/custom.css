@@ -22,13 +22,16 @@
   --ifm-table-border-tr: #EBEFFF;
   --ifm-link-color: #023DFF;
   --ifm-text-color: #222B45;
+  --ifm-color-content: #222B45;
 
   --ifm-green: #68E348;
+  --ifm-green-100: #E1F9DA;
   --ifm-orange: #FF7800;
   --ifm-blue-900: #000C33;
   --ifm-blue-500: #023DFF;
   --ifm-blue-600: #274BDB;;
   --ifm-blue-300: #678BFF;
+  --ifm-blue-200: #B3C5FF;
   --ifm-blue-50: #EBEFFF;
 
   --ifm-h1-font-size: 4rem;
@@ -55,6 +58,7 @@
   --ifm-blue-50: #212226;
   --ifm-table-border-color: rgba(255, 255, 255, 0.16);
   --ifm-table-border-tr: rgba(255, 255, 255, 0.08);
+  --ifm-color-content: #FFFFFF;
 }
 
 html[data-theme='dark'] {

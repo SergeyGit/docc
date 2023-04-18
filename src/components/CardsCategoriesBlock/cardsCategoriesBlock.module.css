@@ -1,0 +1,34 @@
+.section {
+    margin-top: 25px;
+}
+.caption {
+    display: inline-block;
+    color: var(--ifm-blue-500);
+    background-color: var(--ifm-green-100);
+    padding: 2px 8px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+:global([data-theme='dark']) .caption {
+    color: var(--ifm-blue-200);
+    background-color: rgba(164, 238, 145, 0.2);
+}
+.link {
+    display: block;
+    width: 100%;
+    padding: 40px 32px;
+    border: 2px solid var(--ifm-table-border-color);
+    color: var(--ifm-color-content);
+    line-height: 1.5;
+}
+.link:hover {
+    border-color: var(--ifm-blue-500);
+    text-decoration: none;
+    color: var(--ifm-color-content);
+}
+:global([data-theme='dark'])  .link:hover {
+    border-color: var(--ifm-blue-300);
+}
+.item {
+    margin-top: 20px;
+}

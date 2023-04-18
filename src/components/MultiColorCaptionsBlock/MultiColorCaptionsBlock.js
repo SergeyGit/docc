@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './multiColorCaptions.modules.css';
+import styles from './multiColorCaptions.module.css';
 
 const MultiColorCaptionsBlock = ({ props }) => (
   <div className={styles.section}>

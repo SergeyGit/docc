@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+`import clsx from 'clsx';`;
 import styles from './head.module.css';
 import { LinkPrimary } from '../../Links/Links';
 import Translate, { translate } from '@docusaurus/Translate';
