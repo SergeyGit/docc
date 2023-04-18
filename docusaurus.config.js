@@ -281,9 +281,15 @@ const config = {
               },
             },
             {
-              types: ['operator', 'arrow'],
+              types: ['arrow'],
               style: {
                 color: 'rgba(255, 61, 113, 1)',
+              },
+            },
+            {
+              types: ['operator'],
+              style: {
+                color: 'rgba(243, 243, 248, 1)',
               },
             },
             {

@@ -18,6 +18,8 @@
   --ifm-menu-color-background-active: #FF7800;
   --ifm-menu-color-active: #373641;
   --ifm-background-color: white;
+  --ifm-table-border-color: #263238;
+
   --ifm-green: #68E348;
   --ifm-orange: #FF7800;
   --ifm-blue-900: #000C33;
@@ -45,6 +47,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /*--ifm-table-border-color: ;*/
   --ifm-blue-50: #212226;
 }
 
@@ -132,3 +135,51 @@ html[data-theme='dark'] .menu__link--active {
 .footer__copyright {
   max-width: 848px;
 }
+
+table {
+  font-size: 14px;
+}
+
+table thead tr {
+  border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+table thead {
+  background-color: inherit;
+}
+
+table tr {
+  background-color: var(--ifm-table-background);
+  border-top: none;
+  border-bottom: 1px solid var(--ifm-blue-50);
+}
+
+table tr:nth-child(2n) {
+  background-color: var(--ifm-table-background);
+}
+
+table th,
+table td {
+  padding: 16px 8px;
+  border: none;
+}
+
+table th {
+  background-color: inherit;
+  text-align: left;
+  white-space: nowrap;
+}
+
+table td {
+  color: var(--ifm-table-cell-color);
+}
+
+table code {
+  border: none;
+  background: #F2F6FF;
+  border-radius: 6px;
+  padding: 4px 10px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
