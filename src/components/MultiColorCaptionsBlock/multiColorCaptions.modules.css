@@ -1,0 +1,40 @@
+.section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.item {
+    border-top: 2px solid var(--ifm-table-border-color);
+    display: flex;
+    line-height: 1.375;
+}
+
+.caption {
+    background-color: var(--ifm-blue-500);
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 32px;
+    width: 364px;
+    flex-shrink: 0;
+}
+.item:nth-child(3n ) .caption {
+    background-color: var(--ifm-orange);
+    color: var(--ifm-text-color);
+}
+.item:nth-child(3n+2) .caption {
+    background-color: var(--ifm-green);
+    color: var(--ifm-text-color);
+}
+.item:nth-child(2n) .caption {
+    order: 2;
+}
+
+.item:nth-child(3n+1) .caption {
+    background-color: var(--ifm-blue-500);
+}
+.text {
+    padding: 32px 0 32px 40px;
+
+}

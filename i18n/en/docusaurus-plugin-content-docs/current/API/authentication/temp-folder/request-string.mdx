@@ -26,26 +26,13 @@ hide_title: true
 </div>
 
 
+## Переваги для бізнесу
 
-Requests to Tranzzo could be optionally signed, it is recommended. In this case, header `X-API-AUTH` should be replaced with appropriate signing algorithm.
-See examples below.
+import MultiColorCaptionsBlock from '@site/src/components/MultiColorCaptionsBlock/MultiColorCaptionsBlock.js';
+import {businessBenefits} from './_mock';
 
-<aside class="notice">
-    Signatures are case sensitive, they have to be lowercase <a href="https://en.wikipedia.org/wiki/Hexadecimal">Hex</a>.
-</aside>
+<MultiColorCaptionsBlock props={businessBenefits} />
 
-## HMAC-SHA1 (recommended)
-
-> OpenSSL HMAC-SHA1 signing example:
-
-```shell
-SECRET=changeme # replace with ${API_SECRET}
-DATA='{"name":"Joe","age":20}' # replace with raw request
-SIGNATURE=$(echo -n "$DATA" | openssl sha1 -hmac "$SECRET")
-echo "$SIGNATURE"
-# Expected signature
-48731878acbb41e6ee70eac5f1e6f8b8031f9484
-```
 
 ```js
 if (window.ApplePaySession) {
