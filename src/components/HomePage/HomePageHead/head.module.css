@@ -7,7 +7,7 @@
 }
 
 .heroTitle {
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
   font-size: 64px;
   line-height: 72px;
   margin-bottom: 40px;
@@ -21,7 +21,7 @@
 
 .subtitle {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
   margin-bottom: 40px;
   max-width: 560px;
 }

@@ -17,17 +17,9 @@
   margin-top: 40px;
 }
 .repeatableItem {
-  border-top: 1px solid var(--ifm-blue-900);
-  border-bottom: 1px solid var(--ifm-blue-900);
   height: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-}
-:global([data-theme='dark'])  .repeatableItem {
-  border-top: 1px solid rgba(143, 155, 179, 0.5);
-  border-bottom: 1px solid rgba(143, 155, 179, 0.5);
 }
 
 .repeatableItemText {
@@ -35,7 +27,7 @@
   line-height: 1.25;
   margin-top: 24px;
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
   overflow: hidden;
 }
 
@@ -46,5 +38,5 @@
 
 .caption {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
 }

@@ -1,8 +1,4 @@
-.section {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
+
 .block {
     width: 33%;
     text-align: center;
@@ -10,10 +6,26 @@
     color: var(--ifm-font-color-base);
 }
 
-.icon {
-    height: 230px;
-    margin-bottom: 30px;
+.link {
+    display: flex;
+    align-items: center;
+    color: var(--ifm-color-content);
+    font-weight: var(--ifm-font-weight-bold);
+    font-size: 24px;
+    margin-top: 40px;
 }
-.icon svg {
-    max-width: 100%;
+.link:hover {
+    border-color: var(--ifm-blue-500);
+    text-decoration: none;
+    color: var(--ifm-color-content);
+}
+:global([data-theme='dark'])  .link:hover {
+    border-color: var(--ifm-blue-300);
+}
+.link svg {
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+.item {
+
 }

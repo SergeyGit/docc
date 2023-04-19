@@ -57,6 +57,13 @@ import {categoriesBlock} from './_mock';
 Текст элемента списка 3.
 <HowDifficult number={1} caption="Складність інтеграції" />
 
+## Як це працює для ваших клієнтів
+
+При використанні PSP-моделі ваші користувачі (мерчанти) працюватимуть за такою схемою:
+
+1. Мерчант реєструється у мерчант-порталі.
+2. Проходить онбординг за передбаченою вами процедурою.
+3. Генерує платежі в автоматичному режимі через запити до API або створює **[платіжні посилання](http://example.com/)** вручну та передає їх далі своїм покупцям.
 
 
 ## P2P payments
@@ -131,13 +138,11 @@ var applePaySession = new ApplePaySession(3, paymentRequest);
 
 </div>
 
-## Як це працює для ваших клієнтів
+## Більше деталей про ...
 
-При використанні PSP-моделі ваші користувачі (мерчанти) працюватимуть за такою схемою:
+import CategoriesIconBlock from '@site/src/components/CategoriesIconBlock/CategoriesIconBlock';
 
-1. Мерчант реєструється у мерчант-порталі.
-2. Проходить онбординг за передбаченою вами процедурою.
-3. Генерує платежі в автоматичному режимі через запити до API або створює **[платіжні посилання](http://example.com/)** вручну та передає їх далі своїм покупцям.
+<CategoriesIconBlock/>
 
 ### Схема взаємодії сервісів
 
@@ -196,50 +201,10 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 :::
 
 
-## Tabs
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="value" label="Values" default>
-
-Type name             | Represented as |         Values                        |                Example
---------------------- |----------------|-------------------------------------- | --------------------------------------
-`MODE`                | String(≤32)    | `direct`, `hosted`                    |
-`METHOD`                  | String(≤255)     | `purchase`, `capture`, `auth`, `void` |
-
-</TabItem>
-<TabItem value="string" label="String">
-
-Type name             | Represented as |         Values                        |                Example
---------------------- |----------------|-------------------------------------- | --------------------------------------
-`UUID`                | String(36)     |                                       | `"a8d80c86-0c7b-41bc-b63d-1e78f80edcd9"`
-`TIMESTAMP`           | String(23)     |                                       | `"2020-10-10T10:10:22.100"`
-`MODE`                | String(≤32)    | `direct`, `hosted`                    |
-`CC_NUMBER`           | String(13-20)  |                                       | `"4242424242424242"`
-`CC_MASK`             | String(13-20)  |                                       | `"424242******4242"`
-
-</TabItem>
-<TabItem value="cc_mask" label="CC_MASK">
-
-Type name             | Represented as |         Values                        |                Example
---------------------- |----------------|-------------------------------------- | --------------------------------------
-`CC_MASK`             | String(13-20)  |                                       | `"424242******4242"`
-
-</TabItem>
-</Tabs>
-
 ## React Table With Filter
 
 import MainTable from '@site/src/components/Table/MainTable.js';
 import {data, columns} from './_mock';
 
 <MainTable columns={columns} data={data} />
-
-## WL block
-
-import CategoriesIconBlock from '@site/src/components/CategoriesIconBlock/CategoriesIconBlock';
-
-<CategoriesIconBlock/>
 

@@ -11,9 +11,9 @@
 }
 
 .caption {
-    background-color: var(--ifm-blue-500);
+    background-color: var(--ifm-link-color);
     color: white;
-    font-weight: bold;
+    font-weight: var(--ifm-font-weight-bold);
     font-size: 24px;
     padding: 32px;
     width: 364px;
@@ -32,9 +32,12 @@
 }
 
 .item:nth-child(3n+1) .caption {
-    background-color: var(--ifm-blue-500);
+    background-color: var(--ifm-link-color);
 }
 .text {
     padding: 32px 0 32px 40px;
 
+}
+.item:nth-child(2n) .text {
+    padding: 32px 32px 40px 0;
 }

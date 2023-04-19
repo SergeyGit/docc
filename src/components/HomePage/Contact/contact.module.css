@@ -17,12 +17,12 @@
 }
 .contentCaption {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: var(--ifm-font-weight-semibold);
 }
 .text {
     font-size: 24px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: var(--ifm-font-weight-semibold);
     max-width: 520px;
     margin-top: 24px;
     margin-bottom: 56px;
@@ -36,7 +36,7 @@
 }
 .successCaption {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: var(--ifm-font-weight-semibold);
     margin-bottom: 16px;
     margin-top: 64px;
 }
@@ -75,6 +75,7 @@
     padding: 0 16px;
     margin-top: 4px;
     resize: none;
+    font-family: var(--ifm-font-family-base);
 }
 .formWrap textarea {
     padding-top: 10px;

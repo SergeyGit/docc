@@ -84,6 +84,7 @@ const config = {
         logo: {
           alt: 'Tranzzo doc Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-footer.svg',
         },
         items: [
           {

@@ -1,25 +1,31 @@
 .howDifficult {
     margin-left: 16px;
     flex-shrink: 0;
+    font-size: 0;
 }
 .caption {
-    font-weight: bold;
+    font-weight: var(--ifm-font-weight-bold);
 }
 .howDifficultWrap {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 .item {
-    border: 6px solid #EDEFF3;
+    border: 4px solid #EDEFF3;
     background-color: #EDEFF3;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin-right: 8px;
     display: inline-block;
 }
+:global([data-theme='dark']) .item {
+    border-color: #27292D;
+    background-color: #27292D;
+}
 
-.active {
+.active, :global([data-theme='dark']) .active {
     border-color: var(--ifm-blue-500);
     background-color: var(--ifm-orange);
 }
