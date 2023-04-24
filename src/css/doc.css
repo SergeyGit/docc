@@ -147,15 +147,15 @@ code {
     counter-increment: index;
     content: counters(index, '.');
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-color: var(--ifm-green);
-    border: 2px solid var(--ifm-blue-500);
+    border: none;
     flex-shrink: 0;
     font-weight: var(--ifm-font-weight-bold);
     color: var(--ifm-blue-600);
     text-align: center;
-    line-height: 20px;
+    line-height: 24px;
     top: 2px;
 }
 

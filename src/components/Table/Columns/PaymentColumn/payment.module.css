@@ -1,0 +1,16 @@
+.wrap {
+    display: flex;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+.caption {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: var(--ifm-font-weight-bold);
+}

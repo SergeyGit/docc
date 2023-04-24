@@ -1,0 +1,23 @@
+.caption {
+    font-weight: var(--ifm-font-weight-bold);
+    margin-bottom: 2px;
+}
+.item {
+    display: flex;
+    align-items: flex-start;
+}
+.item:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--ifm-orange);
+    border: 3px solid var(--ifm-blue-500);
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    margin-right: 6px;
+}
+.item.present:before {
+    background-color: var(--ifm-green);
+}
+

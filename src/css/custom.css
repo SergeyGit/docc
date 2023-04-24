@@ -77,7 +77,8 @@ html {
 }
 .navbar__brand {
   flex-shrink: 0;
-  width: 286px;
+  width: 266px;
+  margin-right: 0;
 }
 .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module {
   border-right: none !important;
@@ -111,9 +112,6 @@ html {
 }
 .navbar-main-page .search-bar{
     display: none;
-}
-.navbar__brand {
-  margin-right: 0;
 }
 .navbar__logo {
   margin-right: 0;

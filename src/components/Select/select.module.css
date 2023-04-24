@@ -1,0 +1,124 @@
+.select {
+    border: 1px solid var(--ifm-blue-300);
+    min-height: 32px;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.active {
+    border-color: var(--ifm-blue-500);
+}
+.selectHead {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    overflow: auto;
+    width: 100%;
+}
+.selectHead .chip {
+    margin-left: 8px;
+    white-space: nowrap;
+}
+.selectHead::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.selectInput {
+    border: none;
+    width: 100%;
+    min-width: 50px;
+    height: 100%;
+    padding: 0 0 0 8px;
+    font-size: 12px;
+    line-height: 30px;
+    background: none;
+}
+.selectInput:focus {
+    /*width: auto;*/
+    outline: none;
+}
+.selectInput:focus::placeholder {
+    opacity: 0;
+}
+.selectInput.hidePlaceholder::placeholder {
+    opacity: 0;
+}
+.selectDButton {
+    min-width: 36px;
+    background-size: 24px;
+    background: url(./icons/chevrondown.svg) no-repeat center;
+    cursor: pointer;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+}
+.dialog {
+    position: absolute;
+    left: 0;
+    top: 36px;
+    border: 1px solid var(--ifm-blue-500);
+    background-color: #fff;
+    width: 300px;
+    z-index: 100;
+}
+.optionsWrap {
+    overflow: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    max-height: 180px;
+}
+.option {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.checkBox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--ifm-blue-300);
+}
+.checkBox.active {
+    background-color: var(--ifm-blue-500);
+    border-color: var(--ifm-blue-500);
+    background-image: url(./icons/checkbox.svg);
+    background-size: contain;
+}
+.selectedOptions {
+    padding: 12px;
+    font-size: 0;
+    border-bottom: 1px dashed var(--ifm-blue-200);
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 81px;
+    overflow: auto;
+}
+.selectedOptions .chip {
+    margin: 4px;
+}
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 2px 2px 8px;
+    font-size: 10px;
+    line-height: 14px;
+    background-color: var(--ifm-blue-500);
+    color: white;
+    letter-spacing: 0.014em;
+}
+.chipRemove {
+    width: 16px;
+    height: 16px;
+    background-image: url(./icons/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--ifm-blue-500);
+    cursor: pointer;
+}
