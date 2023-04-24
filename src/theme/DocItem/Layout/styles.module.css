@@ -8,16 +8,3 @@
     max-width: 75% !important;
   }
 }
-.row {
-  max-width: 1180px;
-}
-@media (max-width: 1700px) {
-  .docItemContainer {
-    max-width: 890px;
-  }
-}
-@media (min-width: 1700px) {
-  .row {
-    max-width: 1500px;
-  }
-}

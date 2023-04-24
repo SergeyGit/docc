@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from 'react';
 import { useTable } from 'react-table';
-import clsx from 'clsx';
 import ClearIcon from './Close.svg';
 import Select from '@site/src/components/Select/Select';
 import { PaymentColumn } from './Columns/PaymentColumn/PaymentColumn';
@@ -9,7 +8,7 @@ import { FunctionalColumn } from './Columns/FunctionalColumn/FunctionalColumn';
 
 import styles from './table.module.css';
 
-function filterArray(data, filters) {
+function filterTableData(data, filters) {
   if (!filters || filters.length === 0) {
     return data;
   }
@@ -65,13 +64,15 @@ function MainTable({ columns, data }) {
   const [filterState, setFilterState] = useState([]);
 
   const tableData = useMemo(() => {
-    return filterArray(data, filterState);
+    return filterTableData(data, filterState);
   }, [data, filterState]);
   const tableColumns = useMemo(() => columns, [columns]);
+  const filters = useMemo(() => columns.filter((item) => item.filterOptions), [columns]);
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
     columns: tableColumns,
     data: tableData,
+    showHeader: false,
   });
 
   const handleFilterChange = (value, name) => {
@@ -89,6 +90,27 @@ function MainTable({ columns, data }) {
 
   return (
     <div className={styles.tableWrap}>
+      {filters && (
+        <div className={styles.filterWrap}>
+          {filters.map(({ filterOptions, filterColumn, accessor, filterPlaceholder }, index) => (
+            <div className={styles.filterItem} key={accessor}>
+              <Select
+                options={filterOptions}
+                onSelect={handleFilterChange}
+                name={filterColumn || accessor}
+                selected={
+                  filterState.find((item) => item.name === (filterColumn || accessor))?.value || []
+                }
+                placeholder={filterPlaceholder}
+                position={index === filters.length - 1 && 'right'}
+              />
+            </div>
+          ))}
+          <button className={styles.clearBtn} onClick={handleClearFilter}>
+            <ClearIcon />
+          </button>
+        </div>
+      )}
       <table {...getTableProps()} className={styles.table}>
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -96,34 +118,13 @@ function MainTable({ columns, data }) {
               {headerGroup.headers.map((column) => (
                 <th
                   {...column.getHeaderProps()}
-                  className={clsx(styles.headCaption, {
-                    [styles.align]: column.id === 'clear-button',
-                  })}
-                  style={{ width: `${column.width}px`, maxWidth: `${column.width}px` }}
-                >
-                  {column.id === 'clear-button' ? (
-                    <button className={styles.clearBtn} onClick={handleClearFilter}>
-                      <ClearIcon />
-                    </button>
-                  ) : (
-                    <>
-                      {column.render('Header')}
-                      {column.filterOptions && (
-                        <Select
-                          options={column.filterOptions}
-                          onSelect={handleFilterChange}
-                          name={column.filterColumn || column.id}
-                          selected={
-                            filterState.find(
-                              (item) => item.name === (column.filterColumn || column.id)
-                            )?.value || []
-                          }
-                          placeholder={column.filterPlaceholder}
-                        />
-                      )}
-                    </>
-                  )}
-                </th>
+                  className={styles.headCaption}
+                  style={{
+                    minWidth: 120, // minWidth is only used as a limit for resizing
+                    width: column.width, // width is used for both the flex-basis and flex-grow
+                    maxWidth: column.width,
+                  }}
+                />
               ))}
             </tr>
           ))}

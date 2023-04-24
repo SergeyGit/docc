@@ -45,21 +45,34 @@
 }
 .selectDButton {
     min-width: 36px;
-    background-size: 24px;
-    background: url(./icons/chevrondown.svg) no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     flex-shrink: 0;
     border: none;
     padding: 0;
+    background: none;
+}
+.selectDButton path{
+    stroke: var(--ifm-blue-300);
+}
+.selectDButton.active path{
+    stroke: var(--ifm-blue-500);
 }
 .dialog {
     position: absolute;
     left: 0;
+    right: 0;
     top: 36px;
     border: 1px solid var(--ifm-blue-500);
-    background-color: #fff;
-    width: 300px;
+    background-color: var(--ifm-dialog-bg);
+    min-width: 260px;
     z-index: 100;
+}
+.dialog.right {
+    left: auto;
+    right: 0;
 }
 .optionsWrap {
     overflow: auto;

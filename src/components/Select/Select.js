@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
+import ChevronIcon from './icons/chevrondown.svg';
 import styles from './select.module.css';
 
 const Chip = ({ label, onRemove }) => {
@@ -15,7 +16,7 @@ const SelectedOptions = ({ options, onRemove }) => {
   return options.map((option) => <Chip key={option} label={option} onRemove={onRemove(option)} />);
 };
 
-const Select = ({ options, selected, onSelect, name, placeholder }) => {
+const Select = ({ options, selected, onSelect, name, placeholder, position = 'left' }) => {
   const selectRef = useRef(null);
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState('');
@@ -75,9 +76,20 @@ const Select = ({ options, selected, onSelect, name, placeholder }) => {
           placeholder={placeholder}
         />
       </div>
-      <button className={styles.selectDButton} onClick={handleClick} />
+      <button
+        className={clsx(styles.selectDButton, {
+          [styles.active]: open,
+        })}
+        onClick={handleClick}
+      >
+        <ChevronIcon />
+      </button>
       {open && (
-        <div className={styles.dialog}>
+        <div
+          className={clsx(styles.dialog, {
+            [styles.right]: position === 'right',
+          })}
+        >
           {selected.length > 0 && (
             <div className={styles.selectedOptions}>
               <SelectedOptions options={selected} onRemove={handleSelectOption} />

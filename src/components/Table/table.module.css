@@ -9,11 +9,36 @@
 .headCaption > div {
     margin-top: 4px;
 }
+.filterWrap {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.filterItem {
+    width: 0;
+    flex: 1 0 0;
+}
+.tableWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .tableWrap table {
     font-size: 12px;
+    width: 100%;
+}
+.tableWrap table th {
+    padding: 0;
 }
 .tableWrap table td {
     vertical-align: top;
+}
+.tableWrap table td:first-child {
+    padding-left: 0;
+}
+.tableWrap table tr {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--ifm-table-border-color);
 }
 .table {
     min-height: 400px;

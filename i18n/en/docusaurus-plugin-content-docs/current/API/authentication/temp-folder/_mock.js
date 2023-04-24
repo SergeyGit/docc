@@ -1,4 +1,4 @@
-export const FilterOptions = {
+const FilterOptions = {
   payment_method: [
     'Платіжні картки',
     'Електронні гаманці',
@@ -36,7 +36,7 @@ export const columns = [
     filterOptions: FilterOptions.payment_method,
     filterColumn: 'payment_method',
     filterPlaceholder: 'Оберіть тип',
-    width: 180,
+    width: 200,
   },
   {
     Header: 'Регіон',
@@ -50,25 +50,21 @@ export const columns = [
     accessor: 'currency',
     filterOptions: FilterOptions.currency,
     filterPlaceholder: 'Всі',
+    width: 180,
   },
   {
     Header: 'Функціонал',
     accessor: 'functional',
     filterOptions: FilterOptions.functional,
-    width: 180,
     filterPlaceholder: 'Всі',
+    width: 300,
   },
   {
     Header: 'Інтеграція',
     accessor: 'integration',
     filterOptions: FilterOptions.integration,
-    width: 180,
     filterPlaceholder: 'Всі',
-  },
-  {
-    Header: '',
-    accessor: 'clear-button',
-    width: 32,
+    width: 150,
   },
 ];
 
